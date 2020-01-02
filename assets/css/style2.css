@@ -1,0 +1,251 @@
+
+  h1{
+    font-family: cursive;
+  }
+  
+  body,
+  html {
+    height: 100%;
+    font-family: "Raleway", sans-serif;
+  }
+
+  p {
+    line-height: 2;
+  }
+
+  #sidebar{
+    height:100%;
+    position:fixed;
+    width:0;
+    background-color:rgba(255, 255, 255, 0.8);
+    z-index:2;
+    transition:0.5s;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  }
+  
+  #sidebar a{
+    background-color: unset;
+  }
+
+  #btn-menu{
+    top:20px;
+    left: 20px;
+    z-index:2;
+    position:fixed;
+    display: none;
+  }
+
+  #btn-music{
+    top:70px;
+    right: 20px;
+    z-index:2;
+    position:fixed;
+  }
+
+  #btn-menu button,
+  #btn-music button{
+    background:rgba(255,255,255,0.5);
+    border-style:none;
+    border-radius:50%;
+    height:70px;
+    width:70px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(255,255,255,0.5);
+  }
+
+  #btn-close{
+    position: absolute; 
+    top: 0; 
+    right: 25px; 
+    font-size: 36px; 
+    margin-left: 50px;
+    color: black;
+  }
+
+  .page{
+    min-height: 700px;
+    overflow-x: hidden;
+  }
+  
+  #home h4{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+  }
+  
+  #home h1{
+    font-family: cursive !important;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  
+  #home img{
+    width: 80%;
+  }
+
+  .bgimg,
+  .bgimg2,
+  .bgimgtime {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bgimg {
+    background-image: url("../img/template2/fogertyas2.jpg");
+  }
+  
+  .bgimg2 {
+    background-image: url("../img/template2/fogertyas4.jpg");
+  }
+  
+  .bgimgtime {
+    background-image: url("../img/template2/bgtimer.png");
+  }
+
+  .img-gallery img{
+    transition: .5s ease;
+    width: 100%;
+  }
+
+  .img-view{
+    opacity: 0;
+    transition: .5s ease;
+    position:absolute; 
+    top:50%; 
+    left:50%; 
+    transform:translate(-50%, -50%); 
+    -ms-transform:translate(-50%, -50%)
+  }
+
+  .img-gallery:hover img{
+    opacity: 0.5;
+  }
+
+  .img-gallery:hover .img-view{
+    opacity: 1;
+  }
+  
+
+  @media screen and (max-width:425px){
+    #btn-menu{
+      display: inherit;
+    }
+
+    #btn-music{
+      top:20px;
+    }
+
+    .bgimg,
+    .bgimg2{
+      min-height: 50%;
+    }
+
+    .bgimgtime{
+      background-image: url("../img/template2/bgtimer-rotate.png");
+    }
+    
+    #home h4{
+      font-size: 20px;
+    }
+    
+    #home h1{
+      font-size: 30px;
+    }
+
+    #home img{
+      width: 100%;
+    }
+    
+    .countdown{
+      display: block !important;
+    }
+  
+    .img-gallery img{
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width:375px){
+    #btn-menu{
+      display: inherit;
+    }
+
+    #btn-music{
+      top:20px;
+    }
+
+    .bgimg,
+    .bgimg2{
+      min-height: 50%;
+    }
+
+    .bgimgtime{
+      background-image: url("../img/template2/bgtimer-rotate.png");
+    }
+
+    #home h4{
+      font-size: 20px;
+    }
+    
+    #home h1{
+      font-size: 30px;
+    }
+
+    #home img{
+      width: 100%;
+    }
+    
+    .countdown{
+      display: block !important;
+    }
+
+    .img-gallery img{
+      width: 90%;
+    }
+
+  }
+  
+  
+  @media screen and (max-width:320px){
+    #btn-menu{
+      display: inherit;
+    }
+
+    #btn-music{
+      top:20px;
+    }
+
+    .bgimg,
+    .bgimg2{
+      min-height: 50%;
+    }
+
+    .bgimgtime{
+      background-image: url("../img/template2/bgtimer-rotate.png");
+    }
+
+    #home h1{
+      font-size: 20px;
+    }
+    
+    #home h3{
+      font-size: 15px;
+    }
+
+    #home h4{
+      font-size: 15px;
+    }
+
+    #home img{
+      width: 100%;
+    }
+    
+    .countdown{
+      display: block !important;
+    }
+
+    .img-gallery img{
+      width: 90%;
+    }
+  }
